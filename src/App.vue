@@ -6,7 +6,7 @@
 
     <img src="../src/assets/dandelions_purple_transparents.png"
          alt="Bottom left flower"
-         class="absolute bottom-0 left-0 w-56 md:w-[30rem] z-0">
+         class="absolute bottom-0 left-0 w-full md:w-[30rem] z-0">
 
     <div class="text-center z-10 space-y-4 p-2">
       <h1
