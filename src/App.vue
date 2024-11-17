@@ -1,5 +1,6 @@
 <template>
-  <div class="w-full h-screen bg-gray-100 flex flex-col items-center justify-center p-4 relative overflow-hidden">
+  <div class="topMostDiv w-full h-screen bg-gray-100 flex flex-col items-center justify-center p-4 relative overflow-hidden"
+       ref="topMostDiv">
     <img src="../src/assets/flowers_decor_uptodown.png"
          alt="Top right flower"
          class="absolute top-0 right-0 w-72 md:w-96 z-0">
@@ -21,15 +22,45 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'App'
-}
+<script setup>
+import { onMounted, ref } from 'vue';
+
+const topMostDiv = ref(null);
+
+onMounted(() => {
+  console.log(topMostDiv.value);
+});
 </script>
 
 <style>
 .font-satisfy {
   font-family: 'Satisfy', cursive;
+}
+
+.topMostDiv {
+  animation: boxShadowGlow;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes boxShadowGlow {
+
+  0% {
+    box-shadow: inset .5rem .5rem 2rem #7B68EE;
+
+  }
+
+  50% {
+    box-shadow: inset .5rem .5rem 4rem #7B68EE;
+
+  }
+
+  100% {
+    box-shadow: inset .5rem .5rem 2rem #7B68EE;
+
+  }
+
 }
 
 h1 {
