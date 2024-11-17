@@ -1,5 +1,5 @@
 <template>
-  <div class="topMostDiv w-full h-screen bg-gray-100 flex flex-col items-center justify-center p-4 relative overflow-hidden"
+  <div class="topMostDiv w-full h-screen bg-gray-100 flex flex-col justify-start p-4 relative overflow-hidden"
        ref="topMostDiv">
     <img src="../src/assets/flowers_decor_uptodown.png"
          alt="Top right flower"
@@ -9,7 +9,10 @@
          alt="Bottom left flower"
          class="absolute bottom-0 left-0 w-full md:w-[30rem] z-0">
 
-    <div class="text-center z-10 space-y-4 p-2">
+    <div class="flex flex-col justify-center items-center text-center z-10 space-y-4 p-2">
+      <img src="./assets/explolearners_logo_transparent.png"
+           alt=""
+           class="w-full max-w-48">
       <h1
           class="font-satisfy text-6xl md:text-8xl leading-tight bg-gradient-to-r from-[#9370DB] via-[#8B6FC9] to-[#6d53fd] text-transparent bg-clip-text p-2">
         Explolearners
