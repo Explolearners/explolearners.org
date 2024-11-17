@@ -31,4 +31,13 @@ export default {
 .font-satisfy {
   font-family: 'Satisfy', cursive;
 }
+
+h1 {
+  text-shadow: .1rem .1rem .5rem pink;
+}
+
+p {
+  text-shadow: .1rem .1rem .5rem lightpink;
+
+}
 </style>
